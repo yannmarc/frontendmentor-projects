@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./public/css/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header>
+      <div class="logo"><img src="./public/images/logo.svg" alt="spliter logo"></div>
+    </header>
+    <div class="wrapper">
+      <section class="section__calculation">
+        <h5>Bill</h5>
+        <input type="number" name="tip-number" id="total-amount">
+  
+        <h5>Select Tip %</h5>
+        <div class="tip-btns">
+          <button value="5" class="btn">5%</button>
+          <button value="10" class="btn">10%</button>
+          <button value="15" class="btn">15%</button>
+          <button value="25" class="btn">25%</button>
+          <button value="50" class="btn">50%</button>
+          <button value="40" class="btn custom hidden">Custom <span class="hide">40</span></button>
+        </div>
+        
+        <div class="text__container">
+          <h5>Number of People</h5>
+          <span class="text__error">Can't be zero</span>
+        </div>
+        <input type="number" name="people_number" id="number-of-people">
+      </section>
+      <section class="result">
+        <div class="result__block">
+          <div class="text">
+            <h4>Tip Amount</h4>
+            <span class="per__person">/ person</span>
+          </div>
+          <h1 class="result" id="tip_person"> $0.00 </h1>
+        </div>
+        <div class="result__block">
+          <div class="text">
+            <h4>Tip Amount</h4>
+            <span class="per__person">/ person</span>
+          </div>
+          <h1 class="result" id="tip-total"> $0.00 </h1>
+        </div>
+        <button class="reset__btn">RESET</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+</body>
+
+<script src="./public/js/app.js"></script>
+</html>
